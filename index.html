@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rock, Paper, Scissors</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <h1>Rock, Paper, Scissors</h1>
+    <div id="game">
+      <button class="choice" onclick="playGame('rock')">Rock</button>
+      <button class="choice" onclick="playGame('scissors')">Scissors</button>
+      <button class="choice" onclick="playGame('paper')">Paper</button>
+    </div>
+    <div id="result"></div>
+    <button id="play-again" onclick="resetGame()" style="display: none;">Play Again</button>
+    <button id="continue" onclick="playAgain()" style="display: none;">Continue</button>
+    <div id="streak" style="display: none;">Streak: <span id="streak-value">0</span></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
